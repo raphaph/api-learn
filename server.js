@@ -12,7 +12,7 @@ app.route("/user/:id").get((req, res) => res.send( req.params.id))
 
 app.route("/").get((req, res) => res.send( req.query )) // Query params, envia o conteúdo da rota como resposta
 
-//rota pPOST
+//rota POST
 app.route("/").post((req,res) => { 
     const {nome, cidade} = req.body // passando constantes dentro da requisição
     res.send(`meu nome é ${nome}, e minha cidade é ${cidade}`)} // retorna responsta com a requisição completa do body
